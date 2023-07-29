@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>File Upoader using Multer</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+      <div class="container">
+          <h1 class="text-center">Multer Multiple Field File Upload Example</h1>
+          
+          <form action="/uploadfile" id="post" method="post" enctype="multipart/form-data">
+          
+            <div class="form-group">
+              <label for="file1">Upload File 1:</label>
+              <input type="file" name="file1" id="" required class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label for="file2">Upload File 2:</label>
+                <input type="file" name="file2" id="" required class="form-control">
+              </div>
+              <div class="form-group">
+          
+                <button class="btn btn-danger btn-block">
+                      Upload Files
+                  </button>
+              </div>
+        </form>
+      </div>
+</body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</html>
